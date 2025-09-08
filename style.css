@@ -1,22 +1,24 @@
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height:100vh;
+    height: 100vh;
     background-color: rgb(200, 199, 199);
     font-family: Arial, sans-serif;
 }
-.cal{
+
+.cal {
     box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.2);
-    background-color:rgb(4, 4, 4);
-    width:250px;
+    background-color: rgb(4, 4, 4);
+    width: 250px;
     height: 500px;
     border-radius: 7px;
     padding: 20px;
 }
-.display{
-  border: none;
-  background-color: rgb(7, 7, 7);
+
+.display {
+    border: none;
+    background-color: rgb(7, 7, 7);
     margin-top: 90px;
     width: 250px;
     height: 60px;
@@ -25,36 +27,76 @@ body{
 
 
 }
-input{
+
+input {
     font-size: 40px;
 }
-.buttons{
+
+.buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
     margin-top: 30px;
-    }
-button{
+}
+
+button {
     height: 60px;
     width: 60px;
     cursor: pointer;
-    border-radius:45% ;
+    border-radius: 45%;
     border: none;
 }
-button:hover{
+
+button:hover {
     background-color: #ccc;
 }
-button:active{
+
+button:active {
     background-color: #b8b6b6;
     transform: scale(0.98);
 }
-.browm{
+
+.browm {
     background-color: rgb(207, 205, 205);
 }
-.yellow{
+
+.yellow {
     background-color: rgb(255, 98, 0);
 }
-.black{
+
+.black {
     background-color: rgb(37, 37, 37);
     color: white;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: white;
+      
+    }
+
+    .cal {
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+    }
+    button {
+    height: 75px;
+    width: 75px;
+    font-size: 25px;
+    
+}
+.display{
+    width: 100%;
+    margin-top: 160px;
+    
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  padding: 10px;
+}
+
 }
