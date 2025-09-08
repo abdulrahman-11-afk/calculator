@@ -47,12 +47,10 @@ button {
     border: none;
 }
 
-button:hover {
-    background-color: #ccc;
-}
+
 
 button:active {
-    background-color: #b8b6b6;
+    background-color: rgb(158, 158, 158);
     transform: scale(0.98);
 }
 
@@ -72,6 +70,8 @@ button:active {
 @media (max-width: 600px) {
     body {
         background-color: white;
+        padding: 0;
+        margin: 0;
       
     }
 
@@ -88,8 +88,10 @@ button:active {
     
 }
 .display{
-    width: 100%;
+   display: flex;
+   align-items: flex-end;
     margin-top: 160px;
+    width: 330px;
     
 }
 .buttons {
